@@ -1,10 +1,7 @@
 package pl.dmcs.exercises;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppTest {
@@ -31,7 +28,7 @@ public class AppTest {
         for (int i : expectedResults) {
             list.add(i);
         }
-        System.out.println("Rozklad liczby: " + number + " : " + PrimeFactorsCalculator.getPrimeFactors(number));
+        System.out.println("Rozklad liczby: " + number + " -> " + PrimeFactorsCalculator.getPrimeFactors(number));
         assertEquals(PrimeFactorsCalculator.getPrimeFactors(number), list);
     }
 }
