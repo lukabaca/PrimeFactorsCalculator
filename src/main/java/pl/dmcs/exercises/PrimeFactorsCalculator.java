@@ -4,13 +4,13 @@ import java.util.List;
 
 public class PrimeFactorsCalculator {
 
-    public static List<Integer> getPrimeFactors(int number) {
+    public List<Integer> getPrimeFactors(int number) {
         List<Integer> primeFactors = new ArrayList<Integer>();
         if (number > 1 ) {
-            for (int i = 2; i <= number; i++) {
-                while (number % i == 0) {
-                    number /= i;
-                    primeFactors.add(i);
+            for (int divider = 2; divider <= number; divider++) {
+                while (number % divider == 0) {
+                    number /= divider;
+                    primeFactors.add(divider);
                 }
             }
         }
